@@ -1,0 +1,33 @@
+{
+  "name": "horeca-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "history": "^4.7.2",
+    "jquery": "^3.2.1",
+    "material-ui": "^0.19.2",
+    "react": "^16.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-confirm": "^0.1.16",
+    "react-custom-scrollbars": "^4.1.2",
+    "react-dom": "^16.0.0",
+    "react-file-input-previews-base64": "^1.0.6",
+    "react-highcharts": "^15.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.0.14",
+    "react-tap-event-plugin": "^3.0.0",
+    "redux": "^3.7.2",
+    "redux-form": "^7.0.4",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,179 @@
+body {
+  margin: 0px;
+  overflow:hidden;
+}
+
+.highcharts-root{
+  /*margin-top:-40px;*/
+}
+
+.container {
+  overflow:hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+/* display: none; <- Crashes Chrome on hover */
+-webkit-appearance: none;
+margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.tabOne-enter {
+opacity: 1;
+transform:   translate(100%,0);
+/*transform: translate3d(-250px,0,0);*/
+}
+.tabOne-enter.tabOne-enter-active {
+opacity: 1;
+transition: opacity 1s ease;
+transform:   translate(0,0);
+transform: translate3d(0,0,0);
+transition-property: transform, opacity;
+transition-duration: 500ms;
+transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+.tabOne-leave {
+opacity: 1;
+transform:   translate(0,0,0);
+transform: translate3d(0,0,0);
+  transition-property: transform, opacity;
+transition-duration: 500ms;
+transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+
+.tabOne-leave.tabOne-leave-active {
+opacity: 1;
+/*transform:   translate(450px,0);
+transform: translate3d(450px,0,0);*/
+transform:   translate(-100%,0px);
+}
+
+.tabTwo-enter {
+opacity: 1;
+transform:   translate(-100%,0);
+/*transform: translate3d(-250px,0,0);*/
+}
+.tabTwo-enter.tabTwo-enter-active {
+opacity: 1;
+transition: opacity 1s ease;
+transform:   translate(0,0);
+transform: translate3d(0,0,0);
+transition-property: transform, opacity;
+transition-duration: 500ms;
+transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+.tabTwo-leave {
+opacity: 1;
+transform:   translate(0,0,0);
+transform: translate3d(0,0,0);
+  transition-property: transform, opacity;
+transition-duration: 500ms;
+transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+
+.tabTwo-leave.tabTwo-leave-active {
+opacity: 1;
+
+/*transform:   translate(450px,0);
+transform: translate3d(450px,0,0);*/
+transform:   translate(100%,0px);
+}
+
+.dialog {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+padding: 0;
+margin: 0;
+font: inherit;
+color: inherit;
+background: transparent;
+border: none;
+line-height: normal;
+cursor: default;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-weight: 400;
+font-size: 17px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+margin: auto auto;
+overflow: hidden;
+min-width: 270px;
+min-height: 100px;
+text-align: left;
+}
+.dialog-container {
+height: inherit;
+min-height: inherit;
+overflow: hidden;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+background-color: #f4f4f4;
+-webkit-mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC");
+}
+.dialog-mask {
+padding: 0;
+margin: 0;
+font: inherit;
+color: inherit;
+background: transparent;
+border: none;
+line-height: normal;
+cursor: default;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+/* background-color: rgba(0,0,0,0.2); */
+}
+.dialog--material {
+top: 150px;
+font-family: 'Roboto', 'Noto', sans-serif;
+-webkit-font-smoothing: antialiased;
+text-align: left;
+-webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.4);
+box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.4);
+}
+.dialog-container--material {
+-webkit-border-radius: 2px;
+border-radius: 2px;
+background-color: #ffffff;
+}
+.dialog-mask--material {
+/* background-color: rgba(0,0,0,0.3); */
+}
